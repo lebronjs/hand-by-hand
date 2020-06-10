@@ -1,0 +1,99 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>两栏布局</title>
+        <style>
+            .outer {
+                height: 100px;
+                margin-bottom: 50px;
+            }
+            .left {
+                background: tomato;
+                height: 100px;
+            }
+            .right {
+                background: gold;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>浮动 + margin</h3>
+        <style>
+            /* 浮动 */
+            .outer1 .left {
+                width: 200px;
+                float: left;
+            }
+            .outer1 .right {
+                width: auto;
+                margin-left: 200px;
+            }
+        </style>
+        <div class="outer outer1">
+            <div class="left">1-left</div>
+            <div class="right">1-right</div>
+        </div>
+
+        <h3>flex-basis 固定长度 + flex-grow “瓜分”父项的“剩余空间”</h3>
+        <style>
+            /* flex */
+            .outer2 {
+                display: flex;
+            }
+            .outer2 .left {
+                flex-grow: 0; /* 瓜分剩余空间所占份额*/
+                flex-shrink: 0; /* 需要减去的超出的空间所占份额*/
+                flex-basis: 200px; /* flex 元素在主轴方向上的初始大小*/
+            }
+            .outer2 .right {
+                flex: auto; /* 1 1 auto */
+            }
+        </style>
+        <div class="outer outer2">
+            <div class="left">2-left</div>
+            <div class="right">2-right</div>
+        </div>
+
+        <h3>position 脱离文档流 + margin 减去脱离的空间</h3>
+        <style>
+            /* position */
+            .outer3 {
+                position: relative;
+            }
+            .outer3 .left {
+                position: absolute;
+                width: 200px;
+            }
+            .outer3 .right {
+                margin-left: 200px;
+            }
+        </style>
+        <div class="outer outer3">
+            <div class="left">3-left</div>
+            <div class="right">3-right</div>
+        </div>
+
+        <h3>固定宽度 + position 绝对定位</h3>
+        <style>
+            /* position again */
+            .outer4 {
+                position: relative;
+            }
+            .outer4 .left {
+                width: 200px;
+            }
+            .outer4 .right {
+                position: absolute;
+                top: 0;
+                left: 200px;
+                right: 0;
+            }
+        </style>
+        <div class="outer outer4">
+            <div class="left">4-left</div>
+            <div class="right">4-right</div>
+        </div>
+    </body>
+</html>
