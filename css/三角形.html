@@ -1,0 +1,68 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>三角形</title>
+        <style>
+            .box1,
+            .box2,
+            .box3,
+            .box4 {
+                height: 0px;
+                width: 0px;
+                float: left;
+                border-style: solid;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <style>
+            .box0 {
+                float: left;
+                margin: 10px;
+                height: 0px;
+                width: 0px;
+                border-top: 50px solid tomato;
+                border-right: 50px solid lightskyblue;
+                border-bottom: 50px solid lightgoldenrodyellow;
+                border-left: 50px solid lightgreen;
+            }
+        </style>
+        <div class="box0"><h3>四彩石</h3></div>
+
+        <style>
+            .box1 {
+                /* 等腰直角 */
+                border-width: 50px;
+                border-color: transparent transparent transparent lightblue;
+            }
+        </style>
+        <div class="box1"><h3>等腰直角</h3></div>
+
+        <style>
+            .box2 {
+                /* 等边 */
+                border-width: 100px 173px;
+                border-color: transparent tomato transparent transparent;
+            }
+        </style>
+        <div class="box2"></div>
+        <style>
+            .box3 {
+                /* 等腰 */
+                border-width: 100px 80px;
+                border-color: transparent transparent tomato transparent;
+            }
+        </style>
+        <div class="box3"></div>
+        <style>
+            .box4 {
+                /* 其他 */
+                border-width: 100px 90px 80px 70px;
+                border-color: transparent transparent transparent tomato;
+            }
+        </style>
+        <div class="box4"></div>
+    </body>
+</html>
