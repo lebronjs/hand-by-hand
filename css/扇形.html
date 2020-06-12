@@ -1,0 +1,60 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>扇形</title>
+    </head>
+    <body>
+        <div style="display: flex; justify-content: space-around;">
+            <style>
+                /* 通过 border 和 border-radius 实现 1/4 圆 */
+                .sector1 {
+                    height: 0;
+                    width: 0;
+                    border: 100px solid;
+                    border-radius: 50%;
+                    border-color: turquoise tomato transparent thistle;
+                }
+            </style>
+            <div class="sector1"></div>
+
+            <style>
+                /* 通过子元素 rotateZ 和父元素 overflow: hidden 实现任意弧度扇形（此处是60°） */
+                .sector2 {
+                    height: 100px;
+                    width: 100px;
+                    border-top-right-radius: 100px;
+                    overflow: hidden;
+                    /* background: gold; */
+                }
+                .sector2::after {
+                    content: "";
+                    display: block;
+                    height: 100px;
+                    width: 100px;
+                    background: tomato;
+                    transform: rotateZ(-30deg);
+                    transform-origin: left bottom;
+                }
+            </style>
+            <div class="sector2"></div>
+
+            <style>
+                /* 通过渐变设置60°扇形 */
+                .sector5 {
+                    height: 200px;
+                    width: 200px;
+                    background: tomato;
+                    border-radius: 50%;
+                    background-image: linear-gradient(
+                            150deg,
+                            transparent 50%,
+                            #fff 50%
+                        ),
+                        linear-gradient(90deg, #fff 50%, transparent 50%);
+                }
+            </style>
+            <div class="sector5"></div>
+        </div>
+    </body>
+</html>
