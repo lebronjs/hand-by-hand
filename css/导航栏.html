@@ -1,0 +1,82 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>导航栏</title>
+        <style>
+            /* flex 实现 */
+            .nav {
+                display: flex;
+                height: 30px;
+                border: 1px solid #000;
+                padding: 5px;
+                overflow-x: auto;
+                margin-bottom: 100px;
+            }
+            /* 消除滚动条 */
+            .nav::-webkit-scrollbar {
+                display: none;
+            }
+            .item {
+                flex-basis: 200px;
+                flex-grow: 0;
+                flex-shrink: 0;
+                height: 30px;
+                margin-right: 5px;
+                background: lightseagreen;
+                color: white;
+                text-align: center;
+            }
+            /* inline-block 和 white-space: nowrap; 实现 */
+            .nav2 {
+                height: 30px;
+                padding: 5px;
+                border: 1px solid #000;
+                overflow-x: auto;
+                white-space: nowrap;
+                margin-top: 100px;
+            }
+            .nav2::-webkit-scrollbar {
+                display: none;
+            }
+            .item2 {
+                display: inline-block;
+                width: 200px;
+                height: 30px;
+                margin-right: 5px;
+                background: wheat;
+                text-align: center;
+            }
+            .bfc {
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>水平滚动导航栏 + bfc 消除 margin 重叠</h2>
+        <div class="nav">
+            <div class="item">item1</div>
+            <div class="item">item2</div>
+            <div class="item">item3</div>
+            <div class="item">item4</div>
+            <div class="item">item5</div>
+            <div class="item">item6</div>
+            <div class="item">item7</div>
+            <div class="item">item8</div>
+            <div class="item">item9</div>
+        </div>
+        <div class="bfc">
+            <div class="nav2">
+                <div class="item2">item21</div>
+                <div class="item2">item22</div>
+                <div class="item2">item23</div>
+                <div class="item2">item24</div>
+                <div class="item2">item25</div>
+                <div class="item2">item26</div>
+                <div class="item2">item27</div>
+                <div class="item2">item28</div>
+                <div class="item2">item29</div>
+            </div>
+        </div>
+    </body>
+</html>

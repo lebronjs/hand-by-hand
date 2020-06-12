@@ -1,0 +1,83 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>水平垂直居中</title>
+        <style>
+            .outer {
+                height: 200px;
+                width: 200px;
+                background: tomato;
+                margin: 10px;
+                float: left;
+                position: relative;
+            }
+            .inner {
+                height: 100px;
+                width: 100px;
+                background: lightseagreen;
+                background-image: linear-gradient(to right, #7a88ff, #7affaf);
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            h4 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <style>
+            .inner1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        <div class="outer outer1">
+            <div class="inner inner1"><h4>绝对定位 + transform 移动</h4></div>
+        </div>
+
+        <style>
+            .outer2 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+        <div class="outer outer2">
+            <div class="inner inner2"><h4>我最熟悉的 flex</h4></div>
+        </div>
+
+        <style>
+            .inner3 {
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+            }
+        </style>
+        <div class="outer outer3">
+            <div class="inner inner3">
+                <h4>绝对定位 四个0 + margin auto</h4>
+            </div>
+        </div>
+
+        <style>
+            .outer4 {
+                display: grid;
+            }
+            .inner4 {
+                justify-self: center;
+                align-self: center;
+            }
+        </style>
+        <div class="outer outer4">
+            <div class="inner inner4">
+                <h4>grid 布局</h4>
+            </div>
+        </div>
+    </body>
+</html>
