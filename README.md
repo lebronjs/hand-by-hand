@@ -20,8 +20,8 @@
 -   `call、apply、bind` [模拟实现](https://lebronjs.github.io/hand-by-hand/js/_call_apply_bind.js)
 -   `ajax` [手写实现](https://lebronjs.github.io/hand-by-hand/js/_ajax.js)
 -   `jsonp` [手写实现](https://lebronjs.github.io/hand-by-hand/js/_jsonp.js)
--   `节流` 手写实现
--   `防抖` 手写实现
+-   `节流` [手写实现](https://lebronjs.github.io/hand-by-hand/js/_debounce.js) [实例: codepen](https://codepen.io/xuge/pen/NWxdWRx)
+-   `防抖` [手写实现](https://lebronjs.github.io/hand-by-hand/js/_throttle_.js) [实例: codepen](https://codepen.io/xuge/pen/LYGbVqB)
 -   `promise` 手写实现
 -   `路由 - hash` 手写实现
 -   `路由 - history` 手写实现
