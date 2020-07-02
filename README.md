@@ -22,7 +22,7 @@
 -   `jsonp` [手写实现](https://github.com/lebronjs/hand-by-hand/blob/master/js/_jsonp.js)
 -   `节流` [手写实现](https://github.com/lebronjs/hand-by-hand/blob/master/js/_debounce.js) [实例: codepen](https://codepen.io/xuge/pen/NWxdWRx)
 -   `防抖` [手写实现](https://github.com/lebronjs/hand-by-hand/blob/master/js/_throttle.js) [实例: codepen](https://codepen.io/xuge/pen/LYGbVqB)
--   `promise` [手写实现](https://github.com/lebronjs/hand-by-hand/blob/master/js/_Promise.js)
+-   `promise` [手写实现](https://github.com/lebronjs/hand-by-hand/blob/master/js/_promise.js)
 -   `路由 - hash` [手写实现](https://lebronjs.github.io/hand-by-hand/js/hash_route.html)
 -   `路由 - history` [手写实现](https://lebronjs.github.io/hand-by-hand/js/history_route.html)
 -   `洗牌算法` [手写实现](https://github.com/lebronjs/hand-by-hand/blob/master/js/_shuffle.js)
