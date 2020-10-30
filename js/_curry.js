@@ -1,4 +1,22 @@
 /**
+ * compose
+ */
+
+const addFun = (x, y) => x + y
+const squareFun = (z) => z * z
+
+// const compose = (fn1, fn2)=>(...args)=> fn2(fn1(...args))
+const compose = (...[first, ...others])=>(...args)=>{
+    let ret = first(...args)
+    others.forEach(fn=>{
+        ret = fn(ret)
+    })
+    return ret
+}
+const fn = compose(addFun, squareFun)
+console.log(fn(1,2))
+
+/**
  * 
  */
 function uri(protocal) {
