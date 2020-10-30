@@ -27,3 +27,4 @@
 - `路由 - history` [手写实现](https://lebronjs.github.io/hand-by-hand/js/history_route.html)
 - `洗牌算法` [手写实现](https://github.com/lebronjs/hand-by-hand/blob/master/js/_shuffle.js)
 - `深拷贝` [模拟实现](https://github.com/lebronjs/hand-by-hand/blob/master/js/_clone.js)
+- `函数库里化` [模拟实现](https://github.com/lebronjs/hand-by-hand/blob/master/js/_curry.js)
